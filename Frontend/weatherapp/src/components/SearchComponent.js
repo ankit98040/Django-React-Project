@@ -20,6 +20,8 @@ class SearchComponent extends React.Component{
         })
     }
 
+    
+
     render(){
         return(
             <div>

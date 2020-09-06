@@ -8,13 +8,17 @@ class MainPage extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            component: "search"
+            component: "search",
+            city:"",
+            country:""
         }
     }
 
-    callSearchForm = () => {
+    callSearchForm = (city, country) => {
         this.setState({
-            component:"home"
+            component:"home",
+            city:city,
+            country:country
         })
     }
 
@@ -30,7 +34,7 @@ class MainPage extends React.Component{
 		<div class="w3ls-weather-agileinfo"> 
 			
 			{
-                this.state.component === "search" ? <div><SearchComponent search={this.callSearchForm} /></div> : <div><LeftComponent search={this.callSearchForm} /> <RightComponent /></div>
+                this.state.component === "search" ? <div><SearchComponent search={this.callSearchForm} /></div> : <div><LeftComponent search={this.callSearchForm} city={this.state.city} country={this.state.country} /> <RightComponent /></div>
             }
 
 			<div class="clear"></div>

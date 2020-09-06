@@ -3,7 +3,7 @@ import React from 'react';
 class LeftComponent extends React.Component{
     constructor(props){
         super(props);
-        
+
     }
 
 
@@ -12,7 +12,7 @@ class LeftComponent extends React.Component{
             <div>
                 			<div class="weather-left">
 				<div class="weather-left-text">
-					<h4>Los Angeles, USA </h4>
+					<h4>{this.props.city}, {this.props.country} </h4>
 					<h5>Sunday, 12th March </h5>
 				</div>
 				<ul class="report">
