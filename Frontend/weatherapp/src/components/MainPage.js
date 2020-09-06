@@ -8,13 +8,13 @@ class MainPage extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            component: "home"
+            component: "search"
         }
     }
 
     callSearchForm = () => {
         this.setState({
-            component:"search"
+            component:"home"
         })
     }
 
@@ -30,7 +30,7 @@ class MainPage extends React.Component{
 		<div class="w3ls-weather-agileinfo"> 
 			
 			{
-                this.state.component === "search" ? <div><SearchComponent /></div> : <div><LeftComponent search={this.callSearchForm} /> <RightComponent /></div>
+                this.state.component === "search" ? <div><SearchComponent search={this.callSearchForm} /></div> : <div><LeftComponent search={this.callSearchForm} /> <RightComponent /></div>
             }
 
 			<div class="clear"></div>
