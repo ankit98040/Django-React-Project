@@ -1,16 +1,19 @@
 import React from 'react';
 
-class MainPage extends React.Component{
-    constructor(props){
-        super(props);
-
-    }
+class SearchComponent extends React.Component{
+    
 
     render(){
         return(
-            <div></div>
+            <div>
+                <form>
+                    <input type="text" placeholder="Enter City Name" /><br/>
+                    <input type="text" placeholder="Enter City Name" /><br/>
+                    <button>Search</button>
+                </form>
+            </div>
         )
     }
 }
 
-export default MainPage;
+export default SearchComponent;

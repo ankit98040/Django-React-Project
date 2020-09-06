@@ -1,23 +1,37 @@
 import React from 'react';
 import LeftComponent from './LeftComponent';
 import RightComponent from './RightComponent';
+import SearchComponent from './SearchComponent';
+
 
 class MainPage extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            component: "home"
+        }
+    }
 
     callSearchForm = () => {
-        alert("you are calling search form");
+        this.setState({
+            component:"search"
+        })
     }
 
 
     render(){
+       
+
+
         return(
             <div>
                 <div class="w3ls-weather">
 		<h1>Ankit's Weather App</h1>
 		<div class="w3ls-weather-agileinfo"> 
 			
-			<LeftComponent search={this.callSearchForm} />
-            <RightComponent />
+			{
+                this.state.component === "search" ? <div><SearchComponent /></div> : <div><LeftComponent search={this.callSearchForm} /> <RightComponent /></div>
+            }
 
 			<div class="clear"></div>
 		</div>  
