@@ -1,15 +1,12 @@
 import React from 'react';
 
 class RightComponent extends React.Component{
-    constructor(props){
-        super(props);
 
-    }
 
     render(){
         return(
             <div>
-                			<div class="weather-right">
+                <div class="weather-right">
 				<ul>
 					<li>
 						<figure class="icons">
@@ -50,27 +47,6 @@ class RightComponent extends React.Component{
 					</li>
 				</ul>
 				
-					 var icons = new Skycons(),
-						  list  = [
-							"partly-cloudy-day"
-						  ],
-						  i;
-
-					  for(i = list.length; i--; )
-						icons.set(list[i], list[i]);
-					  icons.play();
-			
-				
-					 var icons = new Skycons(),
-						  list  = [
-							"clear-night","partly-cloudy-night", "cloudy", "clear-day", "sleet", "snow", "wind","fog"
-						  ],
-						  i;
-
-					  for(i = list.length; i--; )
-						icons.set(list[i], list[i]);
-					  icons.play();
-
 			</div>
             </div>
         )

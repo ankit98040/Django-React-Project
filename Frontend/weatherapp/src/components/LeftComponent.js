@@ -3,8 +3,9 @@ import React from 'react';
 class LeftComponent extends React.Component{
     constructor(props){
         super(props);
-
+        
     }
+
 
     render(){
         return(
@@ -16,7 +17,7 @@ class LeftComponent extends React.Component{
 				</div>
 				<ul class="report">
 					<li><a href="index.html#">25 °C</a></li>
-					<li><a href="index.html#"><span>79</span> °F</a></li>
+					<li><a onClick={this.props.search}><img src="https://img.icons8.com/pastel-glyph/2x/search.png" width="30" alt="search" /></a></li>
 				</ul>
 			</div>
 
@@ -25,4 +26,4 @@ class LeftComponent extends React.Component{
     }
 }
 
-export default Left;
+export default LeftComponent;
