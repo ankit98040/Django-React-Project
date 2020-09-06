@@ -49,7 +49,7 @@ class RightComponent extends React.Component{
 						<div class="clear"></div>
 					</li>
 				</ul>
-				<script>
+				
 					 var icons = new Skycons(),
 						  list  = [
 							"partly-cloudy-day"
@@ -59,8 +59,8 @@ class RightComponent extends React.Component{
 					  for(i = list.length; i--; )
 						icons.set(list[i], list[i]);
 					  icons.play();
-				</script>
-				<script>
+			
+				
 					 var icons = new Skycons(),
 						  list  = [
 							"clear-night","partly-cloudy-night", "cloudy", "clear-day", "sleet", "snow", "wind","fog"
@@ -70,7 +70,7 @@ class RightComponent extends React.Component{
 					  for(i = list.length; i--; )
 						icons.set(list[i], list[i]);
 					  icons.play();
-				</script>
+
 			</div>
             </div>
         )
